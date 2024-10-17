@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --verde: #769a39;
+    --laranja: #ff8839;
+    --branco: #ffffff;
+    --branco-neve:#e3e3e3;
+    --preto: #000;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1000;
+    font-family: "League Spartan", sans-serif;
+}
+
+.social {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440;
+    display: flex;
+    justify-content: end;
+}
+ 
+
+.social-icons {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background: var(--verde);
+    border-radius: 0 0 20px 20px;
+
+    i {
+        font-size: 32px;
+        color: var(--branco);
+    }
+
+    h3 {
+        color: var(--branco);
+    }
+}
+
+.header {
+    display: flex;
+    position: relative;
+    max-width: 1000;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+
+    img{
+        width: 18%;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+
+        li {
+            font-size: 30px;
+
+            a {
+                color: #000;
+            }
+        }
+    }
+
+    .btn-home,.btn-parceiro{
+        border: 5px solid var(--verde);
+        padding: 15px 45px;
+        border-radius: 20px;
+    }
+}
+
+.btn-header {
+    background: var(--laranja);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.5s;
+
+    a {
+        color: var(--branco);
+        font-size: 25px;
+        padding: 20px;
+
+    }
+}
+
+.btn-header:hover{
+    transform: scale(1.05);
+}
+
+.container-slider{
+    display: flex;
+    display: 100%;
+    min-height: 25vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 250px;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1250px;
+}
+
+.slider{
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button{
+    transform: rotate(180deg);
+}
+
+.container-info {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    top: 300px;
+    gap: 20px; 
+    flex: 1;
+    text-align: center;
+    max-width: 1440px; 
+}
+
+.card-info, .card-info-verde {
+    background: var(--laranja); 
+    padding: 20px; 
+    color: var(--branco);
+    border-radius: 20px;
+    width: 400px; 
+    height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+.card-info-verde {
+    background: var(--verde); 
+}
+
+.card-info img, .card-info-verde img {
+    margin: 0; 
+    max-width: 80%; 
+ 
+}
+
+.card-info h3, .card-info-verde h3 {
+    font-size: 35px; 
+     
+}
+
+.card-info p, .card-info-verde p {
+    font-size: 35px; 
+    max-width: 65%;
+}
+
+.projetos{
+    display: flex;
+    margin: 70px auto;
+    max-width: 1240px;
+    gap: 10px;
+    margin-top: 400px;
+    background: var(--branco-neve);
+}
+
+.projetos-info{
+    padding: 20px;
+
+    h2{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 28px;
+    }
+
+    button{
+        border: 2px solid var(--laranja);
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 20px 0px 20px 0;
+        font-size: 25px;
+        color: var(--laranja);
+        cursor: pointer;
+    }
+}
+
+.dados{
+    text-align: center;
+    padding: 50px;
+    background: var(--laranja);
+}
+
+.texto-dados{
+    h2{
+        color: var(--branco);
+        padding: 30px 50px;
+        font-size: 60px;
+    }
+}
+
+.numeros{
+    display: flex;
+    gap: 230px;
+    justify-content: center;
+}
+
+.num-card{
+    padding: 30px;
+
+    h2{
+        color: var(--branco);
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+    p{
+        color: var(--branco);
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+.atividades{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-atividade{
+    margin: 0 10px 30px 0;
+    h2{
+        font-size: 50px;
+        padding-left: 33px;
+    }
+}
+
+.section-atividades{
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.card-atividades{
+    text-align: center;
+    box-shadow: 1px 2px 20px #00000083;
+    border-radius: 20px;
+
+    img{
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 30px;
+    }
+
+    h3{
+        color: #000;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    P{
+        color: #000;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+}
+
+.card-atividades:hover{
+    transform: scale(1.05);
+}
+
+.color-bottom-green{
+    background: var(--verde);
+    padding: 30px 50px;
+    border-radius: 0 0 20px 20px;
+
+    a{
+        color: var(--branco);
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.color-bottom{
+    background: var(--laranja);
+    padding: 30px 50px;
+    border-radius: 0 0 20px 20px;
+
+    a{
+        color: var(--branco);
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+/* Seja Parceiro */
+
+.SejaParceiro-img {
+    width: 492px;
+    height: 492px;
+    position: absolute;
+    top: 287px;
+    left: 65px;
+}
+
+.SejaParceiro-informações {    
+    background: #EC8806;
+    position: absolute;
+    padding: 20px; 
+    color: var(--branco);
+    font-size: 24px;
+    width: 760px;
+    height: 492px;
+    /* top: 306px; */
+    left: 615px;
+    padding: 91px 320px 0px 112px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+    
+     
+    
+
+
+
+
+

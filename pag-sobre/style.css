@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --verde: #769a39;
+    --laranja: #ff8839;
+    --branco: #ffffff;
+    --branco-neve:#e3e3e3;
+    --preto: #000;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440;
+    font-family: "League Spartan", sans-serif;
+}
+.social{
+    position: relative;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background: var(--verde);
+    border-radius: 0 0 20px 20px;
+
+    i {
+        font-size: 32px;
+        color: var(--branco);
+    }
+
+    h3 {
+        color: var(--branco);
+    }
+}
+
+.header {
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 150px;
+
+        li {
+            font-size: 30px;
+
+            a {
+                color: #000;
+            }
+        }
+    }
+
+
+}
+
+.btn-sobre{
+    border: 5px solid var(--verde);
+    padding: 15px 45px;
+    border-radius: 20px;
+}
+
+.btn-header {
+    background: var(--laranja);
+    border-radius: 20px;
+    padding: 20px;
+
+    a {
+        color: var(--branco);
+        font-size: 25px;
+        padding: 20px;
+
+    }
+}
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+.texto{
+    font-size: 28px;
+    color: white;
+    text-align: left;
+    position: relative;
+    display: block;
+    background-color: #ff8839;
+    margin: 1px auto 0;
+    width: 50%;
+    padding-right: 20px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imagens{
+    width: 40%;
+}
+.imagens img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
